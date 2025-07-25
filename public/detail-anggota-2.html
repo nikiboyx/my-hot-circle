@@ -1,0 +1,98 @@
+dark<!DOCTYPE html>
+<html lang="id" class="">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Anggota - Hot Circle</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme'in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="min-h-screen font-poppins bg-pink-50 text-slate-900 dark:bg-black dark:text-pink-50 transition-colors duration-500 flex flex-col">
+
+<main class="flex-grow">
+    <section class="py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
+
+                <div class="lg:col-span-1 flex flex-col items-center">
+                    <img class="w-48 h-48 sm:w-60 sm:h-60 rounded-full object-cover shadow-2xl" src="./img/anggota-1.jpg" alt="Foto Anggota 1">
+                    <h1 class="mt-6 text-3xl font-bold text-center text-slate-800 dark:text-white">Nama Anggota 1</h1>
+                    <p class="mt-1 text-base text-pink-500 font-medium">"Si Paling Santai"</p>
+                    
+                    <div class="mt-6 flex space-x-5">
+                        <a href="#" class="text-slate-500 dark:text-slate-400 hover:text-pink-500 dark:hover:text-pink-400 text-2xl transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-slate-500 dark:text-slate-400 hover:text-pink-500 dark:hover:text-pink-400 text-2xl transition-colors"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="text-slate-500 dark:text-slate-400 hover:text-pink-500 dark:hover:text-pink-400 text-2xl transition-colors"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-2xl shadow-lg">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-800 dark:text-white border-b-2 border-pink-200 dark:border-gray-600 pb-2">Biodata Unik</h2>
+                        <ul class="mt-4 space-y-3 text-slate-600 dark:text-slate-300">
+                            <li class="flex"><strong class="w-32 shrink-0">Status</strong>: Sedang dalam mode hemat energi.</li>
+                            <li class="flex"><strong class="w-32 shrink-0">Alergi</strong>: Pertanyaan "kapan wisuda?".</li>
+                            <li class="flex"><strong class="w-32 shrink-0">Makanan Pokok</strong>: Mie instan dan sisa tekad.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h2 class="text-xl font-bold text-slate-800 dark:text-white border-b-2 border-pink-200 dark:border-gray-600 pb-2">Keahlian Terpendam</h2>
+                        <ul class="mt-4 space-y-3 text-slate-600 dark:text-slate-300">
+                            <li class="flex items-start"><i class="fa-solid fa-star text-pink-500 mt-1 mr-3"></i>Menemukan barang hilang di tempat yang sudah dicari 10 kali.</li>
+                            <li class="flex items-start"><i class="fa-solid fa-star text-pink-500 mt-1 mr-3"></i>Bisa tidur di mana saja, kapan saja, dalam posisi apa saja.</li>
+                            <li class="flex items-start"><i class="fa-solid fa-star text-pink-500 mt-1 mr-3"></i>Ahli membaca situasi saat teman mau minta traktiran.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8">
+                        <h2 class="text-xl font-bold text-slate-800 dark:text-white border-b-2 border-pink-200 dark:border-gray-600 pb-2">Fakta Menarik</h2>
+                        <p class="mt-4 text-slate-600 dark:text-slate-300 italic">"Playlist lagunya lebih galau dari kisah cintanya. Percaya punya alien peliharaan di rumah tetangga. Pernah menang lomba makan kerupuk tingkat RT tahun 2008 dan masih suka pamer."</p>
+                    </div>
+
+                    <div class="mt-8">
+                        <h2 class="text-xl font-bold text-slate-800 dark:text-white border-b-2 border-pink-200 dark:border-gray-600 pb-2">Galeri Momen</h2>
+                        <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <a href="./img/gallery-1.jpg" target="_blank">
+                                <img src="./img/gallery-1.jpg" alt="Galeri 1" class="aspect-square object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                            </a>
+                            <a href="./img/gallery-2.jpg" target="_blank">
+                                <img src="./img/gallery-2.jpg" alt="Galeri 2" class="aspect-square object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                            </a>
+                            <a href="./img/gallery-3.jpg" target="_blank">
+                                <img src="./img/gallery-3.jpg" alt="Galeri 3" class="aspect-square object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 text-center">
+                        <a href="anggota.html" class="inline-block bg-pink-500 text-white font-bold text-sm px-6 py-2 rounded-md hover:bg-pink-600 transition-colors">
+                            <i class="fa-solid fa-arrow-left mr-2"></i>Kembali ke Daftar Anggota
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<button id="theme-toggle" class="fixed bottom-5 right-5 z-50 w-12 h-12 rounded-full flex items-center justify-center bg-pink-500 text-white text-xl shadow-lg hover:bg-pink-600 transition-all duration-300 hover:scale-110">
+    <i id="theme-icon" class="fa-solid fa-sun"></i>
+</button>
+<script>
+    const menuToggle=document.getElementById("menu-toggle"),menuIcon=document.getElementById("menu-icon"),mobileMenu=document.getElementById("mobile-menu");menuToggle&&menuToggle.addEventListener("click",()=>{mobileMenu.classList.toggle("invisible"),mobileMenu.classList.toggle("opacity-0"),mobileMenu.classList.toggle("-translate-y-4"),menuIcon.classList.toggle("fa-bars"),menuIcon.classList.toggle("fa-xmark")});const themeToggle=document.getElementById("theme-toggle"),themeIcon=document.getElementById("theme-icon"),html=document.documentElement;html.classList.contains("dark")&&(themeIcon.classList.remove("fa-sun"),themeIcon.classList.add("fa-moon")),themeToggle.addEventListener("click",()=>{const e=!html.classList.contains("dark");html.classList.toggle("dark",e),themeIcon.classList.toggle("fa-moon",e),themeIcon.classList.toggle("fa-sun",!e),localStorage.setItem("theme",e?"dark":"light")});
+</script>
+
+</body>
+</html>
