@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id" class="">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Hot Circle</title>
+    
+    <link href="./css/style.css" rel="stylesheet" />
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme'in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="min-h-screen font-poppins bg-pink-50 text-slate-900 dark:bg-black dark:text-pink-50 transition-colors duration-500 flex flex-col">
+
+<header class=" flex-none sticky top-0 w-full z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg shadow-md">
+    <nav class="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <a href="index.html" class="flex items-center gap-2 transition-opacity hover:opacity-80">
+            <svg class="h-8 w-8 text-pink-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 4.529c2.349-2.109 5.979-2.039 8.242.228 2.262 2.268 2.34 5.88.236 8.236l-8.48 8.492-8.478-8.492c-2.104-2.356-2.025-5.974.236-8.236 2.265-2.264 5.888-2.34 8.244-.228z" /></svg>
+            <span class="font-bold text-xl text-slate-800 dark:text-white">Hot Circle</span>
+        </a>
+        <div class="hidden md:flex items-center gap-2">
+            <a href="tentang.html" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-pink-100 dark:hover:bg-gray-700 px-5 py-2 rounded-md transition-colors duration-300">Tentang</a>
+            <a href="anggota.html" class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-pink-100 dark:hover:bg-gray-700 px-5 py-2 rounded-md transition-colors duration-300">Anggota</a>
+            <a href="gallery.html" class="text-sm font-bold text-pink-500 dark:text-pink-400 bg-pink-100 dark:bg-gray-700 px-5 py-2 rounded-md transition-colors duration-300">Galeri</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-toggle" class="text-slate-800 dark:text-white text-2xl z-50">
+                <i id="menu-icon" class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <div id="mobile-menu" class="absolute top-full left-0 w-full bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg transform -translate-y-4 opacity-0 invisible transition-all duration-300 ease-in-out md:hidden">
+        <div class="p-4 space-y-2">
+            <a href="tentang.html" class="block py-3 text-center text-slate-600 dark:text-slate-300 hover:bg-pink-100 dark:hover:bg-gray-700 rounded-md transition-colors">Tentang</a>
+            <a href="anggota.html" class="block py-3 text-center text-slate-600 dark:text-slate-300 hover:bg-pink-100 dark:hover:bg-gray-700 rounded-md transition-colors">Anggota</a>
+            <a href="gallery.html" class="block py-3 text-center font-semibold text-pink-500 bg-pink-100 dark:bg-gray-700 rounded-md transition-colors">Galeri</a>
+        </div>
+    </div>
+</header>
+
+<main class="flex-grow">
+    <section class="py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-slate-800 dark:text-white">
+                    Galeri Kenangan <span class="text-pink-500">Hot Circle</span>
+                </h1>
+                <p class="mt-4 max-w-3xl mx-auto text-base md:text-lg text-slate-600 dark:text-slate-400">
+                    Kumpulan momen tak terlupakan yang menangkap esensi kebersamaan, tawa, dan cerita kami.
+                </p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+                
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-1.jpg" alt="Momen kebersamaan Hot Circle 1" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-2.jpg" alt="Momen kebersamaan Hot Circle 2" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-3.jpg" alt="Momen kebersamaan Hot Circle 3" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-4.jpg" alt="Momen kebersamaan Hot Circle 4" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-5.jpg" alt="Momen kebersamaan Hot Circle 5" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-6.jpg" alt="Momen kebersamaan Hot Circle 6" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-7.jpg" alt="Momen kebersamaan Hot Circle 7" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-8.jpg" alt="Momen kebersamaan Hot Circle 8" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-9.jpg" alt="Momen kebersamaan Hot Circle 9" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-10.jpg" alt="Momen kebersamaan Hot Circle 10" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-11.jpg" alt="Momen kebersamaan Hot Circle 11" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-12.jpg" alt="Momen kebersamaan Hot Circle 12" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-13.jpg" alt="Momen kebersamaan Hot Circle 13" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-14.jpg" alt="Momen kebersamaan Hot Circle 14" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+                <div class="group aspect-w-1 aspect-h-1">
+                    <img src="./img/gal-15.jpg" alt="Momen kebersamaan Hot Circle 15" class="w-full h-full object-cover rounded-xl shadow-md transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+<button id="theme-toggle" class="fixed bottom-5 right-5 z-50 w-12 h-12 rounded-full flex items-center justify-center bg-pink-500 text-white text-xl shadow-lg hover:bg-pink-600 transition-all duration-300 hover:scale-110">
+    <i id="theme-icon" class="fa-solid fa-sun"></i>
+</button>
+<script>
+    const menuToggle=document.getElementById("menu-toggle"),menuIcon=document.getElementById("menu-icon"),mobileMenu=document.getElementById("mobile-menu");function toggleMenu(){mobileMenu.classList.toggle("invisible"),mobileMenu.classList.toggle("opacity-0"),mobileMenu.classList.toggle("-translate-y-4"),menuIcon.classList.toggle("fa-bars"),menuIcon.classList.toggle("fa-xmark")}menuToggle.addEventListener("click",toggleMenu);const themeToggle=document.getElementById("theme-toggle"),themeIcon=document.getElementById("theme-icon"),html=document.documentElement;html.classList.contains("dark")&&(themeIcon.classList.remove("fa-sun"),themeIcon.classList.add("fa-moon")),themeToggle.addEventListener("click",()=>{const e=!html.classList.contains("dark");html.classList.toggle("dark",e),themeIcon.classList.toggle("fa-moon",e),themeIcon.classList.toggle("fa-sun",!e),localStorage.setItem("theme",e?"dark":"light")});
+</script>
+
+</body>
+</html>
