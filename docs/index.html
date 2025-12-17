@@ -117,67 +117,85 @@
 </div>
 
 <!-- Main Content -->
-<main class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+<main class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <!-- Badge -->
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 animate-fade-in-up" data-aos="fade-down">
-            <span class="flex h-2 w-2 relative">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
-            </span>
-            <span class="text-sm font-medium text-slate-600 dark:text-slate-300 tracking-wide uppercase">New Era of Hot Circle</span>
-        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div class="text-center lg:text-left order-2 lg:order-1">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 animate-fade-in-up" data-aos="fade-down">
+                    <span class="flex h-2 w-2 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+                    </span>
+                    <span class="text-sm font-medium text-slate-600 dark:text-slate-300 tracking-wide uppercase">New Era of Hot Circle</span>
+                </div>
 
-        <!-- Headline -->
-        <h1 class="text-6xl md:text-8xl font-display font-extrabold leading-tight mb-8 tracking-tight" data-aos="zoom-in" data-aos-delay="100">
-            Beyond the <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 animate-gradient-x bg-300%">Limits</span>
-        </h1>
-        
-        <!-- Description -->
-        <p class="text-xl text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-            Selamat datang di dimensi baru kreativitas. Tempat di mana ide menjadi kenyataan dan persahabatan menjadi kekuatan.
-        </p>
-        
-        <!-- Buttons -->
-        <div class="flex flex-col sm:flex-row gap-6 justify-center items-center" data-aos="fade-up" data-aos-delay="300">
-            <a href="anggota.html" class="group relative px-8 py-4 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full font-bold text-white shadow-lg shadow-pink-500/25 hover:shadow-pink-500/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
-                <div class="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 ease-out skew-x-12 -translate-x-full"></div>
-                <span class="relative flex items-center gap-2">
-                    Lihat Anggota <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-                </span>
-            </a>
-            
-            <a href="tentang.html" class="px-8 py-4 rounded-full bg-white/5 border border-slate-200 dark:border-white/10 text-slate-800 dark:text-white font-bold hover:bg-white/10 transition-all backdrop-blur-sm flex items-center gap-2">
-                <i class="fa-solid fa-play text-xs p-1.5 rounded-full border border-current"></i> Tentang Kami
-            </a>
+                <!-- Headline -->
+                <h1 class="text-5xl md:text-7xl font-display font-extrabold leading-tight mb-6 tracking-tight" data-aos="zoom-in" data-aos-delay="100">
+                    Beyond the <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 animate-gradient-x bg-300%">Limits</span>
+                </h1>
+                
+                <!-- Description -->
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+                    Selamat datang di dimensi baru kreativitas. Tempat di mana ide menjadi kenyataan dan persahabatan menjadi kekuatan.
+                </p>
+                
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center" data-aos="fade-up" data-aos-delay="300">
+                    <a href="anggota.html" class="group relative px-8 py-3 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full font-bold text-white shadow-lg shadow-pink-500/25 hover:shadow-pink-500/50 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="absolute inset-0 bg-white/20 group-hover:translate-x-full transition-transform duration-500 ease-out skew-x-12 -translate-x-full"></div>
+                        <span class="relative flex items-center gap-2">
+                            Lihat Anggota <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </span>
+                    </a>
+                    
+                    <a href="tentang.html" class="px-8 py-3 rounded-full bg-white/5 border border-slate-200 dark:border-white/10 text-slate-800 dark:text-white font-bold hover:bg-white/10 transition-all backdrop-blur-sm flex items-center gap-2">
+                        <i class="fa-solid fa-play text-xs p-1.5 rounded-full border border-current"></i> Tentang Kami
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="order-1 lg:order-2 flex justify-center perspective-1000" data-aos="fade-left" data-aos-duration="1000">
+                <div class="relative w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] animate-float">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-pink-500 to-purple-600 rounded-[2rem] blur-2xl opacity-40 animate-pulse"></div>
+                    <img src="./img/home.jpg" alt="Hot Circle Team" class="relative w-full h-full object-cover rounded-[2rem] shadow-2xl border-4 border-white/20 z-10 transform tilt-card transition-transform duration-100 ease-out">
+                    
+                    <!-- Floating Badges -->
+                    <div class="absolute -top-6 -right-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl border border-white/10 z-20 animate-float" style="animation-delay: 1s;">
+                        <i class="fa-solid fa-rocket text-3xl text-gradient bg-gradient-to-r from-pink-500 to-purple-500 text-transparent bg-clip-text"></i>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <!-- Stats/Features Grid -->
-        <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="500">
             <div class="glass p-6 rounded-3xl hover:bg-white/10 transition-colors group cursor-default">
                 <div class="w-12 h-12 mx-auto bg-pink-500/10 rounded-2xl flex items-center justify-center text-pink-500 text-xl mb-4 group-hover:scale-110 transition-transform">
                     <i class="fa-solid fa-users"></i>
                 </div>
-                <h3 class="font-bold text-lg mb-1 dark:text-white">Solid Team</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Persahabatan yang tak terhitung.</p>
+                <h3 class="font-bold text-center text-lg mb-1 dark:text-white">Solid Team</h3>
+                <p class="text-center text-sm text-slate-500 dark:text-slate-400">Persahabatan yang tak terhitung.</p>
             </div>
             
             <div class="glass p-6 rounded-3xl hover:bg-white/10 transition-colors group cursor-default">
                 <div class="w-12 h-12 mx-auto bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-500 text-xl mb-4 group-hover:scale-110 transition-transform">
                     <i class="fa-solid fa-lightbulb"></i>
                 </div>
-                <h3 class="font-bold text-lg mb-1 dark:text-white">Creative Mind</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Ide tanpa batas ruang.</p>
+                <h3 class="font-bold text-center text-lg mb-1 dark:text-white">Creative Mind</h3>
+                <p class="text-center text-sm text-slate-500 dark:text-slate-400">Ide tanpa batas ruang.</p>
             </div>
             
             <div class="glass p-6 rounded-3xl hover:bg-white/10 transition-colors group cursor-default">
                 <div class="w-12 h-12 mx-auto bg-cyan-500/10 rounded-2xl flex items-center justify-center text-cyan-500 text-xl mb-4 group-hover:scale-110 transition-transform">
                     <i class="fa-solid fa-infinity"></i>
                 </div>
-                <h3 class="font-bold text-lg mb-1 dark:text-white">Limitless</h3>
-                <p class="text-sm text-slate-500 dark:text-slate-400">Eksplorasi tanpa henti.</p>
+                <h3 class="font-bold text-center text-lg mb-1 dark:text-white">Limitless</h3>
+                <p class="text-center text-sm text-slate-500 dark:text-slate-400">Eksplorasi tanpa henti.</p>
             </div>
         </div>
 
@@ -238,6 +256,23 @@
     }
     
     document.getElementById('theme-toggle-desktop').addEventListener('click', toggleTheme);
+
+    // Tilt Effect for Hero Image (Vanilla JS)
+    const card = document.querySelector('.tilt-card');
+    if(card) {
+        document.addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            const { innerWidth, innerHeight } = window;
+            const x = (clientX - innerWidth / 2) / 30; // Reduce sensitivity
+            const y = (clientY - innerHeight / 2) / 30;
+            card.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
+        });
+        
+        // Reset when mouse leaves window (optional, but good for UX)
+        document.addEventListener('mouseleave', () => {
+             card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+        });
+    }
 </script>
 
 </body>
